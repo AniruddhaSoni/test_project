@@ -16,7 +16,7 @@ const ProfilePage = () => {
 
   const getUser = async () => {
     const response = await fetch(
-      `https://test-server-mocha.vercel.app/users/${userId}`,
+      `https://test-project-sandy-omega.vercel.app/users/${userId}`,
       {
         method: "GET",
         headers: { Authorization: `Bearer ${token}` },
