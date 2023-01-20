@@ -64,7 +64,7 @@ const Form = () => {
     formData.append("picturePath", values.picture.name);
 
     const savedUserResponse = await fetch(
-      "https://test-project-e4qezk3az-ayush1430.vercel.app/auth/register",
+      "https://test-project-six-iota.vercel.app/auth/register",
       {
         method: "POST",
         body: formData,
@@ -80,7 +80,7 @@ const Form = () => {
 
   const login = async (values, onSubmitProps) => {
     const loggedInResponse = await fetch(
-      "https://test-project-e4qezk3az-ayush1430.vercel.app/auth/login",
+      "https://test-project-six-iota.vercel.app/auth/login",
       {
         method: "POST",
         headers: { "Content-Type": "application/json" },
