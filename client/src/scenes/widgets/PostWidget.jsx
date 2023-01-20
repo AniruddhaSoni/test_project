@@ -36,7 +36,7 @@ const PostWidget = ({
 
   const patchLike = async () => {
     const response = await fetch(
-      `https://test-project-sandy-omega.vercel.app/posts/${postId}/like`,
+      `https://test-project-e4qezk3az-ayush1430.vercel.app/posts/${postId}/like`,
       {
         method: "PATCH",
         headers: {
@@ -67,7 +67,7 @@ const PostWidget = ({
           height="auto"
           alt="post"
           style={{ borderRadius: "0.75rem", marginTop: "0.75rem" }}
-          src={`https://test-project-sandy-omega.vercel.app/assets/${picturePath}`}
+          src={`https://test-project-e4qezk3az-ayush1430.vercel.app/assets/${picturePath}`}
         />
       )}
       <FlexBetween mt="0.25rem">
