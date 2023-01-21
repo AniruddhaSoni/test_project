@@ -65,8 +65,7 @@ const Form = () => {
     formData.append("picturePath", values.picture.name);
 
 
-    const savedUserResponse = await fetch(
-      "https://test-project-six-iota.vercel.app/auth/register",
+    const savedUserResponse = await fetch("https://test-project-six-iota.vercel.app/auth/register",
       {
         method: "POST",
         body: formData,
