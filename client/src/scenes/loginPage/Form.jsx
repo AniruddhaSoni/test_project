@@ -65,7 +65,7 @@ const Form = () => {
     console.log(formData);
 
     const savedUserResponse = await fetch(
-      "https://test-project-six-iota.vercel.app/auth/register",
+      "https://test-project-six-iota.vercel.app/auth/login",
       {
         method: "POST",
         headers: { "Content-Type": "application/json" },
