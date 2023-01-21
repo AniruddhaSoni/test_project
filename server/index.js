@@ -47,7 +47,7 @@ const upload = multer({ storage });
 app.get("/",(req,res)=>{
   res.send("HELL ITS WORKING");
 });
-app.post("/auth/register", upload.single("picture"), register);
+app.post("/auth/register", register);
 app.post("/posts", verifyToken, upload.single("picture"), createPost);
 
 /* ROUTES */
