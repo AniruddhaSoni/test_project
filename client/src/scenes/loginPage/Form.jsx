@@ -62,14 +62,13 @@ const Form = () => {
       formData.append(value, values[value]);
     }
     formData.append("picturePath", values.picture.name);
-    console.log(formData);
+
 
     const savedUserResponse = await fetch(
-      "https://test-project-six-iota.vercel.app/auth/login",
+      "https://test-project-six-iota.vercel.app/auth/register",
       {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(values),
+        body: formData,
       }
     );
     const savedUser = await savedUserResponse.json();
